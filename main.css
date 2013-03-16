@@ -1,0 +1,83 @@
+/*general settings*/
+h1,h2,p,li {
+	font-family: 'Handlee', cursive;
+}
+a {
+	text-decoration: none;
+	display: block;
+	height: 30px;
+}
+
+p { 
+	opacity: 0.75
+}
+a:link {
+	color: #0000ff;
+}    
+
+a:visited {
+	color: #800080;
+} 
+
+a:hover {
+	color: #ff00ff;
+}   
+
+a:active {
+	color:#ff0000;
+}  
+
+h1,h2,h3 { 
+	text-shadow: 5px 5px 5px #FF0000;
+}
+
+ul {
+	list-style-type: none;
+}
+/**End General settings**/
+
+/**Body**/
+
+body {
+	background-image: url(../images/clashlogo.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #1E90FF;
+	overflow: hidden;
+	height: auto;
+	width: auto;
+}
+
+
+.content {
+	width: 800px;
+	height: 800;
+	background-color: #fffff0; 
+	margin: 220px 50px 0px 50px;
+	
+header {
+	width: 800px;
+	height: 50px;
+	background-color: #fffff0; 
+	margin: 220px 50px 0px 50px;
+
+body div header nav ul {
+	width: 100px;
+	line-height:1.5
+	margin: 0 auto; 
+	padding: 0;
+	overflow: hidden;
+}
+
+body div header nav ul li {
+	width: 100px;
+	float: left;
+	display: inline;
+}
+
+#columns
+{
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome */
+column-count:3;
+}
