@@ -1,7 +1,9 @@
 /*general settings*/
-h1,h2,p,li {
-	font-family: 'Handlee', cursive;
+h1,h2,h3,p,li {
+	padding: 5px;
+	font: 100%/1.5 'Handlee', cursive;/*default font is 16px*/
 }
+
 a {
 	text-decoration: none;
 	display: block;
@@ -11,6 +13,7 @@ a {
 p { 
 	opacity: 0.75
 }
+
 a:link {
 	color: #0000ff;
 }    
@@ -27,57 +30,115 @@ a:active {
 	color:#ff0000;
 }  
 
-h1,h2,h3 { 
+h1,h2,{ 
 	text-shadow: 5px 5px 5px #FF0000;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.5em;/*24/16*/
+}
+
+h2 { 
+	font-weight: bold;
+	font-size: 1.25em; /*20/16*/
 }
 
 ul {
 	list-style-type: none;
 }
+
+img {
+	max-width:100%;
+}
+
 /**End General settings**/
 
 /**Body**/
-
 body {
 	background-image: url(../images/clashlogo.png);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-color: #1E90FF;
-	overflow: hidden;
-	height: auto;
-	width: auto;
+	background-position: top center;
+	overflow: scroll;
 }
 
 
 .content {
-	width: 800px;
-	height: 800;
+	width: 66.666%;
 	background-color: #fffff0; 
-	margin: 220px 50px 0px 50px;
-	
-header {
-	width: 800px;
-	height: 50px;
-	background-color: #fffff0; 
-	margin: 220px 50px 0px 50px;
+	margin: 17.405063291139% 16.139240506329% 0% 16.139240506329%;
+}
 
-body div header nav ul {
-	width: 100px;
-	line-height:1.5
+header {
+	margin: 17.405063291139%  16.139240506329% 0% 16.139240506329%;	
+}
+	 
+/** navigation**/
+nav {
+	float: right;
+}
+ul {
+	width: 45%;
 	margin: 0 auto; 
 	padding: 0;
 	overflow: hidden;
 }
 
-body div header nav ul li {
-	width: 100px;
+nav ul li {
+	width: 33.333333333;
 	float: left;
-	display: inline;
 }
 
-#columns
-{
--moz-column-count:3; /* Firefox */
--webkit-column-count:3; /* Safari and Chrome */
-column-count:3;
+nav ul li a {
+	width: %
+	line-height: 1.5;
+	text-align: center;
 }
+
+#event_logo{
+	border: 8px solid #000;
+	float: center;
+	width: 72.02881152461% /*600px/833px*/
+} 
+
+
+/*gallery*/
+
+article ul {
+	border: 1px dashed #000;
+	width: 550px/
+	margin: 20 auto;	
+	padding: 10px;
+	overflow: hidden;
+}
+
+article ul li {
+	float: left;
+	margin-left: 20px;
+}	
+
+article ul li a {
+	border: 5px solid #000;
+	width: 100px;
+	height: 100px;
+	display: block;
+}
+
+#columns {
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+}
+
+section {
+	float: left;
+	width: 100%;
+	margin-left: 0.01800720288115% /*15px/833px*/
+}
+ 
+ 
+ 
+ /*media queries*/
+ 
