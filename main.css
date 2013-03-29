@@ -29,8 +29,10 @@ a:hover {
 a:active {
 	color:#ff0000;
 }  
-
-h1,h2,{ 
+input:focus {
+	background: #87cefa;
+}
+h1,h2{ 
 	text-shadow: 5px 5px 5px #FF0000;
 }
 
@@ -87,20 +89,19 @@ ul {
 }
 
 nav ul li {
-	width: 33.333333333;
+	width: 33.333333333%;
 	float: left;
 }
 
 nav ul li a {
-	width: %
+	width: 30%;
 	line-height: 1.5;
 	text-align: center;
 }
 
 #event_logo{
-	border: 8px solid #000;
-	float: center;
-	width: 72.02881152461% /*600px/833px*/
+	border: 8px solid #000;	
+	width: 72.02881152461%; /*600px/833px*/
 } 
 
 
@@ -108,8 +109,8 @@ nav ul li a {
 
 article ul {
 	border: 1px dashed #000;
-	width: 550px/
-	margin: 20 auto;	
+	width: 550px;
+	margin: 20px auto;	
 	padding: 10px;
 	overflow: hidden;
 }
