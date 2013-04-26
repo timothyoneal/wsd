@@ -6,10 +6,14 @@ h1,h2,h3{
 }
 
 h1 {
-	width: 650px;
+	font-size: 1.5em; /*24px*/
+	width: 68.421053%; /*650px/960px*/
 	float: left;
 }
 
+h2 {
+	font-size: 1.125em; /*18px*/
+}
 
 p {
 	opacity: .7;
@@ -35,18 +39,21 @@ ul {
 	list-style-type: none;
 }
 
-
+img {
+	max-width: 100%;
+}
 body {
-	width: 960px;
-	margin:0 auto;
+	width: 75.889328%; /*960px/1265px*/
+	margin: 0 auto;
 	background-color: #008080;
 	font-family: 'Fondamento', cursive;
+	font-size: 1em; /*16px*/
 	overflow: scroll;
 }
 /**End General settings**/
 
 header {
-	width: 960px;
+	width: 75.889328%; /*960px/1265px*/
 	height: 80px;
 	background-color: #f5deb3;
 	margin: 25px 25px 25px 25px;
@@ -54,26 +61,26 @@ header {
 }
 
 section {
-	width: 960px;
+	width: 75.889328%; /*960px/1265px*/
 	background-color: #f5deb3;
 	padding: 10px;
 	margin: 0 25px 0 25px;
 }
 aside {
-	width: 960px;
+	width: 75.889328%; /*960px/1265px*/
 	background-color: #f5deb3;
 	padding: 10px;
 	margin: 0 25px 0 25px;
 	}
 
 article {
-	width: 960px;
+	width: 75.889328%; /*960px/1265px*/
 	background-color: #f5deb3;
 	padding: 10px;
 	margin: 0 25px 0 25px;
 }
 footer {
-	width: 960px;
+	width: 75.889328%; /*960px/1265px*/
 	background-color: #f5deb3;
 	margin: 0 25px 25px 25px;
 	padding: 10px;	
@@ -89,7 +96,7 @@ footer {
 
 header nav ul {
 	background-color: #f5deb3;
-	width: 300px;
+	width: 31.25%; /*300/960*/
 	clear: right;
 	line-height: 1.5;
 	margin: 0 auto; 
@@ -98,12 +105,13 @@ header nav ul {
 }
 
 header nav ul li {
-	width: 100px;
+	width: 33.3333%; /*100/300*/
 	float: left;
 }
 
 header nav ul li a {
 	text-decoration: none;
+	width: 33.3333%;
 	display: block;
 	height: 30px;
 	text-align: center;
@@ -129,7 +137,7 @@ header nav ul li a:active {
 
 article ul {
 	border: 1px dashed #000;
-	width: 900px;
+	width: 93.75%; /*900px/960*/
 	margin: 20px auto;	
 	padding: 10px;
 	overflow: hidden;
@@ -141,8 +149,63 @@ article ul li {
 }	
 
 article ul li a {
-	border: 5px solid #000;
 	width: 100px;
-	height: 100px;
 	display: block;
 }
+
+
+
+/********Media Querries*********/
+
+/**for media max width 480px**/
+@media screen and (max-width: 480px) {
+h1 {
+	float: none;
+}
+
+h1,h2,h3 {
+	text-align: center;
+}
+
+header {
+	height: auto;
+}
+header nav ul {
+	width: 100%;
+	clear: none;
+}
+article ul {
+	display: none;
+}
+
+}
+ 
+/** for media max width 700px**/
+@media screen and (max-width: 700px) {
+h1 {
+	float: none;
+}
+
+h1,h2,h3 {
+	text-align: center;
+}
+
+header {
+	height: auto;
+}
+header nav ul {
+	width: 100%;
+	clear: none;
+}
+
+}
+
+
+/** for media max width 980px**/
+@media screen and (max-width: 980px) {
+
+
+header {
+	height: auto;
+}
+
