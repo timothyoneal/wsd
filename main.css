@@ -83,7 +83,7 @@ footer {
 	width: 75.889328%; /*960px/1265px*/
 	background-color: #f5deb3;
 	margin: 0 25px 25px 25px;
-	padding: 10px;	
+	padding: 1.0416667%;/*10px/960px*/	
 }
 
 .columns {
@@ -149,7 +149,7 @@ article ul li {
 }	
 
 article ul li a {
-	width: 100px;
+	width: 100% 
 	display: block;
 }
 
@@ -178,6 +178,11 @@ article ul {
 	display: none;
 }
 
+.columns {
+	-moz-column-count: 1;    /**Firefox**/
+	-webkit-column-count: 1;  /**Safari and Chrome**/
+	column-count: 1;
+}
 }
  
 /** for media max width 700px**/
@@ -193,9 +198,16 @@ h1,h2,h3 {
 header {
 	height: auto;
 }
+
 header nav ul {
 	width: 100%;
 	clear: none;
+}
+
+.columns {
+	-moz-column-count: 1;    /**Firefox**/
+	-webkit-column-count: 1;  /**Safari and Chrome**/
+	column-count: 1;
 }
 
 }
